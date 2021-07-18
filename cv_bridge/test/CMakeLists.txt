@@ -6,7 +6,7 @@ include_directories("../src")
 catkin_add_gtest(${PROJECT_NAME}-utest test_endian.cpp test_compression.cpp utest.cpp utest2.cpp test_rgb_colors.cpp)
 target_link_libraries(${PROJECT_NAME}-utest
   ${PROJECT_NAME}
-  ${OpenCV_LIBRARIES}
+  ${OpenCV_LIBS}
   ${catkin_LIBRARIES}
 )
 
